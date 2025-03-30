@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
-import glob from 'glob';
+import { glob } from 'glob';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
+import postcssSortMediaQueries from 'postcss-sort-media-queries';
 
 export default defineConfig(({ command }) => {
   return {
@@ -38,7 +39,7 @@ export default defineConfig(({ command }) => {
     css: {
       postcss: {
         plugins: [
-          require('postcss-sort-media-queries')({
+          postcssSortMediaQueries({
             sort: 'mobile-first'
           })
         ]
