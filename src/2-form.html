@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
+    <link rel="stylesheet" href="./css/2-form.css" />
+  </head>
+  <body>
+    <form class="feedback-form" autocomplete="off">
+      <label class="label-form">
+        Email
+        <input class="input-form" type="email" name="email" autofocus />
+      </label>
+      <label class="label-form">
+        Message
+        <textarea class="textarea-form" name="message" rows="8"></textarea>
+      </label>
+      <button class="submit-button-form" type="submit">Submit</button>
+    </form>
+
+    <script type="module" src="./js/2-form.js"></script>
+  </body>
+</html>
